@@ -1,0 +1,29 @@
+services:
+  researcher1:
+    image: ${RESEARCHER1_IMAGE:-ming2tofu33/mission15-researcher1:latest}
+    container_name: mission15_researcher1
+    volumes:
+      - ./shared:/shared
+    command:
+      - python
+      - train_model.py
+      - --train-path
+      - data/train.csv
+      - --test-path
+      - data/test.csv
+      - --output-dir
+      - /shared
+
+  researcher2:
+    build:
+      context: ./researcher2
+    image: mission15-researcher2-jupyter:local
+    container_name: mission15_researcher2_jupyter
+    depends_on:
+      - researcher1
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./shared:/shared
+      - ./researcher2:/workspace/researcher2
+    working_dir: /workspace/researcher2

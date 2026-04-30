@@ -1,0 +1,18 @@
+{
+  "rmse": 2.0105,
+  "train_rows": 7000,
+  "validation_rows": 1400,
+  "test_rows": 3000,
+  "model_path": "C:\\Users\\amy\\Desktop\\sprint\\sprint_ai07\\미션\\미션15\\4팀_김도민\\mission-result\\shared\\model.pkl",
+  "test_path": "C:\\Users\\amy\\Desktop\\sprint\\sprint_ai07\\미션\\미션15\\4팀_김도민\\mission-result\\shared\\test.csv",
+  "feature_columns": [
+    "Hours Studied",
+    "Previous Scores",
+    "Extracurricular Activities",
+    "Sleep Hours",
+    "Sample Question Papers Practiced"
+  ],
+  "target_column": "Performance Index",
+  "model": "Ridge(alpha=1.0)",
+  "random_state": 42
+}
