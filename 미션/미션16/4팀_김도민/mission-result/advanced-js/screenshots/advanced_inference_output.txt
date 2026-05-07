@@ -1,0 +1,9 @@
+Mission 16 advanced ONNX inference
+model: C:\Users\amy\Desktop\sprint\sprint_ai07\미션\content\16\mnist_cnn.onnx
+input: input
+output: output
+
+image,predicted_label,confidence
+image1.png,8,1.0000
+image2.png,3,1.0000
+image3.png,2,1.0000

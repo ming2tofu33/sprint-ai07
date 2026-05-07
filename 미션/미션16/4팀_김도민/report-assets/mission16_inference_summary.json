@@ -1,0 +1,7 @@
+{
+  "base_pth_accuracy": 0.9762,
+  "quantized_pth_accuracy": 0.9761,
+  "onnx_accuracy": 0.9762,
+  "sample_predictions_csv": "report-assets\\mission16_inference_sample_predictions.csv",
+  "sample_predictions_image": "report-assets\\mission16_inference_sample_predictions.png"
+}

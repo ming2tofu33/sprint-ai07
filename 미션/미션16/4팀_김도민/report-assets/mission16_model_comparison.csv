@@ -1,0 +1,4 @@
+﻿model_type,file_name,size_bytes,size_kb,size_mb,accuracy
+PyTorch pth,mission_16_mnist_mlp.pth,2145928,2095.63,2.0465,0.9762
+Quantized pth,mission_16_mnist_mlp_quantized.pth,542962,530.24,0.5178,0.9761
+ONNX,mission_16_mnist_mlp.onnx,2144478,2094.22,2.0451,0.9762

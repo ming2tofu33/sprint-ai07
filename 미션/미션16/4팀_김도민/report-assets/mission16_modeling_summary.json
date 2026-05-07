@@ -1,0 +1,22 @@
+{
+  "model": "MNISTMLP",
+  "dataset": "MNIST",
+  "epochs": 3,
+  "training_seconds": 45.87230467796326,
+  "base_model": {
+    "path": "mission-result\\models\\mission_16_mnist_mlp.pth",
+    "accuracy": 0.9762,
+    "size_bytes": 2145928
+  },
+  "quantized_model": {
+    "path": "mission-result\\models\\mission_16_mnist_mlp_quantized.pth",
+    "accuracy": 0.9761,
+    "size_bytes": 542962,
+    "quantization": "dynamic int8 for nn.Linear"
+  },
+  "onnx_model": {
+    "path": "mission-result\\models\\mission_16_mnist_mlp.onnx",
+    "accuracy": 0.9762,
+    "size_bytes": 2144478
+  }
+}
