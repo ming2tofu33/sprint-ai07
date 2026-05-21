@@ -1,0 +1,6 @@
+__pycache__/
+.pytest_cache/
+tests/
+report/
+saved_images/*.png
+*.zip
